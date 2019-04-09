@@ -162,28 +162,7 @@
     <item row="4" column="5" rowspan="13" colspan="3">
      <layout class="QGridLayout" name="gridLayout_4">
       <item row="6" column="1">
-       <widget class="QComboBox" name="comboBox_HPF">
-        <item>
-         <property name="text">
-          <string>200 Hz</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>100 Hz</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>10 Hz</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>0.3 Hz</string>
-         </property>
-        </item>
-       </widget>
+       <widget class="QComboBox" name="comboBox_HPF"/>
       </item>
       <item row="7" column="0">
        <widget class="QLabel" name="label_15">
@@ -203,47 +182,10 @@
        <widget class="QComboBox" name="comboBox_selectedIN"/>
       </item>
       <item row="8" column="1">
-       <widget class="QComboBox" name="comboBox_MODE">
-        <item>
-         <property name="text">
-          <string>Bipolar</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Differential</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Monopolar</string>
-         </property>
-        </item>
-       </widget>
+       <widget class="QComboBox" name="comboBox_MODE"/>
       </item>
       <item row="7" column="1">
-       <widget class="QComboBox" name="comboBox_LPF">
-        <item>
-         <property name="text">
-          <string>4400 Hz</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>900 Hz</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>500 Hz</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>130 Hz</string>
-         </property>
-        </item>
-       </widget>
+       <widget class="QComboBox" name="comboBox_LPF"/>
       </item>
       <item row="1" column="0" colspan="2">
        <widget class="Line" name="line_3">
@@ -294,28 +236,7 @@
        </widget>
       </item>
       <item row="5" column="1">
-       <widget class="QComboBox" name="comboBox_SIDE">
-        <item>
-         <property name="text">
-          <string>None</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Right</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Left</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Not defined</string>
-         </property>
-        </item>
-       </widget>
+       <widget class="QComboBox" name="comboBox_SIDE"/>
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="label_17">
