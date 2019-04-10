@@ -1,6 +1,21 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#define ACQ_SETT 0b10000000
+#define DECIM    0b01000000
+#define REC_ON   0b00100000
+#define FSAMP1   0b00010000
+#define FSAMP0   0b00001000
+#define NCH1     0b00000100
+#define NCH0     0b00000010
+#define ACQ_ON   0b00000001
+#define ACQ_OFF  0b00000000
+
+#define CRC_CODE 0b10001100
+#define CONFIG_SIZE 40
+
+
+
 #include <QMainWindow>
 
 namespace Ui {
@@ -14,8 +29,17 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    unsigned char crc(unsigned char config[]);
+
+private slots:
+    void updateConfig();
+    void updateConfigInput();
+    void saveConfig();
+    void openConfig();
+    void updateGUI();
 
 private:
+    void initGUI();
     Ui::MainWindow *ui;
     QString m_FSAMP_str[4]={"10240 Hz",
                             "5120 Hz",
@@ -153,6 +177,10 @@ private:
     QString m_MODE_str[3]={"Bipolar",
                           "Differencial",
                           "Monopolar"};
+    unsigned char m_config[CONFIG_SIZE];
+    unsigned char m_confInputs[12][7];
+
+
 
 };
 
